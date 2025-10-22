@@ -1,0 +1,23 @@
+a:link{
+         color: burlywood     
+         border 2px solid white;
+         
+}
+
+a:visited{
+           color: red
+        
+           
+           
+
+}
+
+a:hover{
+         color:pink
+          
+        
+}
+body{
+        color: aqua;
+        background-color: blue;
+}

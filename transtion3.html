@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    header{
+             background-color: aqua;
+             color: red;
+             padding: 15px 20px;
+    }
+    
+    .logo{
+            font-size: 24px;
+            font-weight: bold;
+    }
+
+    nav{
+           position: relative;
+    }
+
+    
+    #toggle{
+              display: none;
+    }
+
+    label{
+            display: inline-block;
+            cursor: pointer;
+            margin-top: 10px;
+    }
+
+    label span{
+                display: block;
+                width: 30px;
+                height: 3px;
+                background: white;
+                margin: 5px 0;
+                transition: 0.3s;
+    }
+
+    .menu{
+            max-height: 0;
+            overflow: hidden;
+            background-color: #444;
+            transition: max-height 4s ease;
+    }
+
+.menu a{
+          display: block;
+          padding: 10px 20px;
+          color: white;
+          text-decoration: none;
+          border-top: 1px solid #555;
+}
+
+.menu a:hover{
+               background-color: #555;
+}
+
+#toggle:checked+label+.menu{
+                              max-height: 500px;
+}
+
+
+</style>
+   <body>
+    
+
+    <header>
+        <div class="logo">my site</div>
+        <nav>
+            <input type="checkbox" id="toggle">
+            <label for="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="menu">
+                <a href="order.html">Home</a>
+                <a href="litag.html">About</a>
+                <a href="text shadow.html">Services</a>
+                <a href="payment.html">Contact</a>
+                
+            </div>
+            <img src="bike.png" height="100" width="100" alt="">
+        </nav>
+    </header>
+   </body>
+</html>
+
+          
+    
+    

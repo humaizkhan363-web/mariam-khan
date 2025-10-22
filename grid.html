@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic CSS Grid Example</title>
+<style>
+  .container {
+    display: grid; /* Grid system start */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns ban gaye */
+                                                    /*  fr = fractional unit (space ka hissa) 1fr matlab har column equal space lega 
+                                                    fr ka number badhne se columns ka count nahi badalta,
+                                                   bas har column ki relative width badalti hai.*/
+    gap: 10px; /* Boxes ke beech space */
+    background-color: lightgray;
+    padding: 10px;
+  }
+
+  .box {
+    background-color: tomato;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px; /* andar ka space */
+  }
+</style>
+</head>
+<body>
+
+<h1>Basic CSS Grid Example</h1>
+
+<div class="container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+</div>
+
+</body>
+</html>
+
+
+</body>
+</html>

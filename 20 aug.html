@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+              margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            
+ 
+        }
+                   
+
+        .container{
+                       display: grid;
+                       grid-template-rows: 80px 1fr 60px;/*header,main,footer*/
+                       height: 100vh;
+        }
+
+        header{
+                   background-color: teal;
+                   color: white;
+                   display: flex;
+                   align-items: center;
+                   justify-content: space-between;
+                   padding: 0 20px;
+        }
+
+        nav a{
+                  color: white;
+                  text-decoration: none;
+                  margin-left: 20px;
+        }
+
+        nav a:hover{
+                         text-decoration: underline;
+        }
+
+        main{
+                     background-color: #f0f0f0;
+                     padding: 30px;
+        }
+
+        footer{
+                   background-color: #333;
+                   color: white;
+                   text-align: center;
+                   line-height: 60px;
+        }
+        
+         .img{
+                     justify-self: center;
+                     align-items: center;
+                     transition: transform 5s ;
+                     transition-delay: 0s;
+                     transform: scale(1.0);
+                    
+
+
+                   
+                    
+                
+        }
+
+        .img:hover{
+                          transform: scale(1.2);
+                          transition-delay: 0s;
+        }
+
+        
+                         
+
+        
+
+
+        .img{
+               justify-self: center;
+               align-items: center;
+               
+        }
+
+        .h{
+               transition: transform 0.3s;
+        }
+
+        .h:hover{
+                     transform: scale(1.05);
+        }
+
+        .headphones{
+                        justify-self: center;
+                          align-items: center;
+                          transition: transform 3s;
+                          transition-delay: 0s;
+
+        }
+
+        .headphones:hover{
+                                    transform: scale(1.2);
+        }
+
+
+        .charger{
+                          justify-self: center;
+                          align-items: center;
+                          transition: transform 3s;
+                          transition-delay: 0s;  
+        }
+
+        .charger:hover{
+                          transform: scale(1.5);     
+        }
+       
+
+
+        .cable{
+                       justify-self: center;
+                          align-items: center;
+                          transition: transform 3s;
+                          transition-delay: 0s;
+        }
+
+
+        .cable:hover{
+                          transform: scale(1.5);     
+        }
+
+        
+
+
+                    
+                    
+                    
+           
+                
+                            
+                                
+                    
+        
+                 
+        
+       
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="conntainer">
+
+        <header>
+
+           <div class="logo">My site</div> 
+            <nav>
+                <a href="samsung.html">ABOUT</a>
+                <a href="contact samsung.html">CONTACT</a>
+                <a href="service.html">SERVICE</a>
+            </nav>
+        </header>
+
+
+        <main>
+            <h2>Welcome!</h2>
+            <p>This is the main content area using CSS Grid layout. </p>
+            </main>
+                 </div>
+                 <div class="img">
+        <img src="apple.jepg.jpg" alt="">
+                 </div>
+                 <div class="img">
+                  <img src="iphoe.jpg" alt="">
+                 </div>
+                 <div class="headphones">
+                    <img src="apple headphone.jpg" alt="">
+                 </div>
+                 <div>
+                    <div class="charger">
+                        <img src="apple dock.jpg" alt="">
+                    </div>
+</div>
+                 <div class="cable">
+                                       <img src="apple cable.jpg" alt="">
+                 </div>
+
+           </div>      
+         </div>
+
+             <footer>
+                &copy;2025 All Rights Reserved
+             </footer>
+</body>
+</html>

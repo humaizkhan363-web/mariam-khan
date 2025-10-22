@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+                font-size: 16px;
+        }
+
+        body{
+               font-family: Arial, Helvetica, sans-serif;
+               padding: 20px;
+        }
+      
+        .rem-heading{
+                        font-size: 2rem;
+                        color: rgb(22, 22, 188);
+                        margin-bottom: 20px;
+
+        }
+
+        .parent{
+                  font-size: 20px;
+                  border: 2px dashed gray;
+                  padding: 20px;
+        }
+
+        .child-em{
+                    font-size: 1.5em;
+                    color: green;
+        }
+
+        .child-rem{
+                     font-size: 1.5rem;
+                     color: purple;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1 class="rem-heading">This is a Rem heading (2rem = 32px)</h1>
+
+
+    <div class="parent">
+    <p class="child-em">This is EM text (1.5em = 30px based on parent)</p>    
+    <p class="child-rem">This is REM text (1.5rem = 24px based on root) </p>
+
+
+    </div>
+</body>
+</html>

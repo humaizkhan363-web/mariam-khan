@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+             margin: 0;
+             padding: 0;
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .Container{
+                    display: grid;
+                    grid-template-rows: 80px 1fr 60px;
+                    height: 100vh;
+        }
+        
+        header{
+                  background-color: teal;
+                  color: chartreuse;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 0 20px;
+        }
+
+        nav a{
+                color: white;
+                text-decoration: none;
+                margin-left: 20px;
+        }
+
+        nav a:hover{
+                      text-decoration: underline;
+                      
+        }
+
+        main{
+                  background-color: white;
+                  padding: 30px;
+        }
+
+        footer{
+                 background-color: black;
+                 color: bisque;
+                 text-align: center;
+                 line-height: 60px;
+        }
+
+        .porducts{
+                    margin-top: 20px;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+                    gap:20px
+                }
+                
+                .card{
+                       background-color: rgb(50, 182, 182);
+                       padding: 20px;
+                       transition: 3s;
+                       box-shadow: 10px 10px;
+                       border: 2px solid;
+                       
+                       align-items: center;
+                    ;
+                       justify-self: center;
+                       
+                       
+
+                }
+
+                .card:hover{
+                              transform: scale(1.2);
+                }
+
+        
+    </style>
+</head>
+<body>
+ <div class="Container">
+    <header>
+        <div class="logo">Market</div>
+        <nav>
+            <a href="market.html">ABOUT US</a>
+            <a href="ms .html">SERVICES</a>
+            <a href="market contact.html">CONTACT US</a>
+        </nav>
+        
+    </header>
+
+    <main>
+        <h2>welcome to my site</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, explicabo.</p>
+
+        <div class="porducts">
+            <div class="card">bbq</div>
+            <div class="card">burger</div>
+            <div class="card">watermelon</div>
+            <div class="card">pizza</div>
+           
+            
+            
+        </div>
+    </Main>
+    
+
+    <footer>
+        &copy;2025 all right Reserved
+    </footer>
+ </div>   
+</body>
+</html>

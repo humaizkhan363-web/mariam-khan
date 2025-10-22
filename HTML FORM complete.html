@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/HUMAIZ%20KHAN/Desktop/HTML%20FORM%202.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           .form{
+                  color: aqua;
+                  background-color: red;
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                  font-size: larger;
+                  font-weight: 900;
+                  font-style: italic;
+                  width: 50;
+                  padding: 0;
+                  border: 3px solid blue;
+                  flex: auto;
+                  height: 12;
+                  box-shadow:5px 10px #000;
+           }
+    </style>
+</head> 
+<body>
+    <div class="form">
+ <form action="http://127.0.0.1:5500/backend.php">
+   
+   <label for="user name">enter your name</label>
+   <input type="text" id="userkaname" name="fname" placeholder="type here..."><br><br>
+   <label for="text">enter your father name</label>
+   <input type="text" id="userkayfathername" name="fname" placeholder="type here..."><br><br>
+   <label for="text">select your age</label>
+   <input type="number" id="userkiage" name="age" min="18" max="30" required=""><br><br>
+   <label>select your gender</label>
+   <label for="male">male</label>
+   <input type="radio" name="gender" id="male" required=""> <br> <br><label for="female">female</label>
+    <input type="radio" name="gender" id="female" required=""> <br><br>
+
+    
+   <label for="number">contact no</label>
+   <input type="contact number" id="userka number" placeholder="type here..."><br><br> 
+   <label for="select your coures"></label>
+
+   <input type="checkbox" name="coures1" id="java">
+    <label for="coures1">java</label>
+
+    <input type="checkbox" name="coures2" id="angular">
+    <label for="coures2">angular</label>
+
+
+    <input type="checkbox" name="coures3" id="python">
+    <label for="coures3">python</label>     <br><br>
+    <input type="checkbox" name="coures4" id="flutter">
+    <label for="coures4">flutter</label>              <br><br>
+    <label for="">select your timing</label>    <br><br>
+    <select name="" id="" required="">
+    <option value="mwf">select here</option>
+    <option value="mwf">m.w.f</option>
+    <option value="tts">t.t.s</option>
+    </select>                                              <br><br>
+    <label for="male">enter your emale</label>
+    <input type="email" id="male" placeholder="type here" required="">
+    <br> <br>
+    <label for="date">select your date</label>    <br><br>
+    <input type="date">
+    
+     <label for="">select your time</label>      <br><br>
+     <input type="time">
+
+
+     <label for="range">select your range</label>  <br> <br>
+     <input type="range" id="range">
+
+     <label for="photo">upload your photo</label>        <br><br>
+     <input type="file" id="photo" required="">
+
+     <button>submit</button>
+     </form></div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+    
+  
+    
+    
+
+
+
+
+   
+
+
+   
+
+
+   
+
+   
+   
+
+
+</body></html>

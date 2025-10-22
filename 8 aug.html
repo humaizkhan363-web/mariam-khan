@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    @keyframes humaiz{
+                        0%{top:0px ;}
+                         60%{top: 300px;}
+                         100%{top: 0px;}
+    }
+
+    header{
+             background-color: aqua;
+             color: red;
+             padding: 15px 20px;
+    }
+    
+    .logo{
+            font-size: 24px;
+            font-weight: bold;
+    }
+
+    nav{
+           position: relative;
+    }
+
+    
+    #toggle{
+              display: none;
+    }
+
+    label{
+            display: inline-block;
+            cursor: pointer;
+            margin-top: 10px;
+    }
+
+    label span{
+                display: block;
+                width: 30px;
+                height: 3px;
+                background: white;
+                margin: 5px 0;
+                transition: 0.3s;
+    }
+
+    .menu{
+            max-height: 0;
+            overflow: hidden;
+            background-color: #444;
+            
+    }
+
+.menu a{
+          display: block;
+          padding: 10px 20px;
+          color: white;
+          text-decoration: none;
+          border-top: 1px solid #555;
+}
+
+.menu a:hover{
+               background-color: #555;
+}
+
+#toggle:checked+label+.menu{
+                              max-height: 500px;
+}
+
+
+        
+.car{
+        border: 1PX solid #ddd;
+        border-radius: 50%;
+        padding: 5px;
+        width: 150px;
+        
+        
+        width: 100px;
+        height: 100px;
+        background: fixed;
+          animation:humaiz 3s backwards infinite;
+        
+             
+        
+}
+@keyframes humaiz {
+                     0%{transform: rotate(0deg);}
+                     100%{transform: rotate(360deg);}
+    
+}
+        
+    
+       
+
+
+
+
+         
+          
+
+
+
+</style>
+   <body>
+    
+
+    <header>
+        <div class="logo">my site</div>
+        <nav>
+            <input type="checkbox" id="toggle">
+            <label for="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="menu">
+                <a href="order.html">Home</a>
+                <a href="litag.html">About</a>
+                <a href="text shadow.html">Services</a>
+                <a href="payment.html">Contact</a>
+                <a href="cantainer.html">Home</a>
+                <a href="loder.html">loder</a>
+                <a href="about.html">about us</a>
+                <a href="padding.html">padding</a>
+                <a href="HTML FORM complete.html">Html form</a>
+                <a href="types of nouns.html">nouns</a>
+                
+            </div>
+            <div class="car">
+                <img src="car.png.jpg" alt="">
+            </div>
+            
+                 
+        
+           
+            
+        </nav>
+    </header>
+   </body>
+</html>
+
+          
+    
+    
